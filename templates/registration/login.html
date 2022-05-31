@@ -1,0 +1,69 @@
+{% extends "base_registration.html" %}
+{% load i18n %}
+
+{% block lang%}
+{% get_current_language as CURRENT_LANGUAGE %}
+{% get_available_languages as AVAILABLE_LANGUAGES %}
+{% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
+<div class="languages lang-section">
+  <ul class="languages">
+    {% for language in languages %}
+      
+        <a class='link' href="/{{ language.code }}/accounts/login"
+          {% if language.code == CURRENT_LANGUAGE %} class="active"{% endif %}>
+          {{ language.name_local }}
+        </a><br>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}
+
+
+
+{% block content %}
+<div class="login">
+  {% if form.errors %}
+    <p class="error-alert">{% trans "Your username and password didn't match. Please try again." %}</p>
+  {% endif %}
+
+  {% if next %}
+    {% if user.is_authenticated %}
+      <p>{% trans "Your account doesn't have access to this page." %}</p>
+      <p>{% trans "To proceed, please login with an account that has access." %}</p>
+    {% else %}
+      <p>{% trans 'Please login to see this page.' %}</p>
+    {% endif %}
+  {% endif %}
+
+  <form method="post" action="{% url 'login' %}">
+    {% csrf_token %}
+    <table class="login-form"> 
+      <tr class="form-control-lg">
+        <!-- <td>{{ form.username.label_tag }}</td> -->
+        <td><label for="username">{% trans 'Username' %}:</label></td>
+        <td>{{ form.username }}</td>
+      </tr>
+      <tr class="form-control-lg">
+        <!-- <td>{{ form.password.label_tag }}</td> -->
+        <td><label for="password">PIN:</label></td>
+        <td>{{ form.password }}</td>
+      </tr>
+    </table>
+    <input class="btn btn-success btn-lg submit-button" type="submit" value="{% trans 'login' %}" />
+    <input type="hidden" name="next" value="{{ next }}" />
+  </form>
+
+  {# Assumes you setup the password_reset view in your URLconf #}
+
+  <p><a class="link" href="{% url 'password_reset' %}">{% trans 'Lost PIN? Forgot username?' %}</a></p>
+
+  
+</div>
+{% endblock %}
+
+{% block footer %}
+<div class="content-wrap"></div>
+<div>
+    <footer class="footer">© 2022 Japan Kauri Education Trust</footer>
+</div>
+{% endblock %}

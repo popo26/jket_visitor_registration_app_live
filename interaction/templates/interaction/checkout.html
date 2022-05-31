@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block header %}
+
+<h3 style="color:green;">{% trans 'Select your choice & enter your PIN' %}</h3>
+{% endblock %}
+
+{% block content %}
+
+<div class="class-time-student">
+
+    <h4>{{ current_time }}</h4>
+    <h1 style="color:purple;">{{ student.first_name}}, {{ student.last_name }}</h1>
+</div>
+
+
+<div class="checkout-forms">
+    <form action="" method="post">
+        {% csrf_token %}
+        <div>
+            <div class="form-control-lg">
+                <label>{% trans 'Checkout Choice:' %} </label>
+                {{ checkout_form.errors }}
+                {{ checkout_form.non_field_errors }}
+                {{ checkout_form.add_error }}
+                {{ checkout_form.checkout_choice }}
+            </div>
+
+            <div class="form-control-lg">
+                {{ password_form.errors }}
+                {{ password_form }}
+
+                {% if message %}
+                <div class="alert alert-success" role="alert">{{message}}</div>
+                {% endif %}
+                
+            </div>
+            
+        </div>
+        <button type="submit" class="btn btn-success btn-lg submit-button">{% trans 'Submit' %}</button>
+        <a class='link forgot-pin' href="{% url 'password_reset' %}">{% trans 'Forgot your PIN?' %}</a>
+</div>
+</form>
+
+<div>
+
+</div>
+<div class="previous-page">
+    <a class='link' href="{% url 'student_list' classroom_name.id %}">{% trans 'Previous Page' %}</a>
+</div>
+{% endblock %}

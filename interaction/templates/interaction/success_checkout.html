@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block header %}
+<h1>{% trans 'Successfully Submitted.' %}</h1>
+<h1>Have a good day!</h1>
+{% endblock %}
+
+{% block content %}
+<div class="back-to-front-page">
+<a class="link" href="{% url 'index' %}">{% trans 'Back to Front Page' %}</a>
+</div>
+{% endblock %}

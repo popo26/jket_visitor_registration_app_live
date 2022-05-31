@@ -1,0 +1,256 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-31 13:59+1200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: interaction/forms.py:11
+msgid "Drop-off"
+msgstr ""
+
+#: interaction/forms.py:12
+msgid "Pick-up"
+msgstr ""
+
+#: interaction/forms.py:14 interaction/models.py:67
+msgid "checkout choice"
+msgstr ""
+
+#: interaction/models.py:10
+msgid "teacher name"
+msgstr ""
+
+#: interaction/models.py:19
+msgid "class room"
+msgstr ""
+
+#: interaction/models.py:20
+msgid "day of week"
+msgstr ""
+
+#: interaction/models.py:21
+msgid "start time"
+msgstr ""
+
+#: interaction/models.py:22
+msgid "end time"
+msgstr ""
+
+#: interaction/models.py:68
+msgid "checkout time"
+msgstr ""
+
+#: interaction/password_validation.py:12 interaction/password_validation.py:18
+msgid "Your PIN must contain exactly 6 digit"
+msgstr ""
+
+#: interaction/templates/base.html:26
+msgid "Welcome to JKET"
+msgstr ""
+
+#: interaction/templates/interaction/checkout.html:6
+msgid "Select your choice & enter your PIN"
+msgstr ""
+
+#: interaction/templates/interaction/checkout.html:23
+msgid "Checkout Choice:"
+msgstr ""
+
+#: interaction/templates/interaction/checkout.html:41
+msgid "Submit"
+msgstr ""
+
+#: interaction/templates/interaction/checkout.html:42
+msgid "Forgot your PIN?"
+msgstr ""
+
+#: interaction/templates/interaction/checkout.html:50
+#: interaction/templates/interaction/student_list.html:27
+msgid "Previous Page"
+msgstr ""
+
+#: interaction/templates/interaction/classroom_list.html:5
+msgid "Select your classroom"
+msgstr ""
+
+#: interaction/templates/interaction/classroom_list.html:21
+msgid "There is no class today."
+msgstr ""
+
+#: interaction/templates/interaction/index.html:23
+msgid "Find Your Child"
+msgstr ""
+
+#: interaction/templates/interaction/student_list.html:21
+msgid "There is no student in this class."
+msgstr ""
+
+#: interaction/templates/interaction/success_checkout.html:5
+msgid "Successfully Submitted."
+msgstr ""
+
+#: interaction/templates/interaction/success_checkout.html:11
+msgid "Back to Front Page"
+msgstr ""
+
+#: rego/settings.py:138
+msgid "English"
+msgstr ""
+
+#: rego/settings.py:139
+msgid "Japanese"
+msgstr ""
+
+#: templates/admin/base_site.html:3
+msgid "Django site admin"
+msgstr ""
+
+#: templates/base_registration.html:27
+msgid "JKET PIN Reset Portal"
+msgstr ""
+
+#: templates/registration/logged_out.html:14
+msgid "Logged out!"
+msgstr ""
+
+#: templates/registration/logged_out.html:18
+msgid "Click here for JKET PIN Reset Portal"
+msgstr ""
+
+#: templates/registration/login.html:26
+msgid "Your username and password didn't match. Please try again."
+msgstr ""
+
+#: templates/registration/login.html:31
+msgid "Your account doesn't have access to this page."
+msgstr ""
+
+#: templates/registration/login.html:32
+msgid "To proceed, please login with an account that has access."
+msgstr ""
+
+#: templates/registration/login.html:34
+msgid "Please login to see this page."
+msgstr ""
+
+#: templates/registration/login.html:43
+msgid "Username"
+msgstr ""
+
+#: templates/registration/login.html:52
+msgid "login"
+msgstr ""
+
+#: templates/registration/login.html:58
+msgid "Lost PIN? Forgot username?"
+msgstr ""
+
+#: templates/registration/password_change_done.html:8
+#: templates/registration/password_change_form.html:8
+msgid "Change password"
+msgstr ""
+
+#: templates/registration/password_change_done.html:9
+#: templates/registration/password_change_form.html:9
+msgid "Log out"
+msgstr ""
+
+#: templates/registration/password_change_done.html:15
+#: templates/registration/password_change_form.html:15
+msgid "Home"
+msgstr ""
+
+#: templates/registration/password_change_done.html:16
+#: templates/registration/password_change_form.html:16
+msgid "Password change"
+msgstr ""
+
+#: templates/registration/password_change_done.html:24
+msgid "Your PIN has been changed."
+msgstr ""
+
+#: templates/registration/password_change_done.html:27
+msgid "Please logout."
+msgstr ""
+
+#: templates/registration/password_change_form.html:49
+msgid "Please correct the error below."
+msgstr ""
+
+#: templates/registration/password_change_form.html:51
+msgid "Please correct the errors below."
+msgstr ""
+
+#: templates/registration/password_change_form.html:84
+msgid "Change my PIN"
+msgstr ""
+
+#: templates/registration/password_change_form.html:92
+msgid "Changed your mind? Logout."
+msgstr ""
+
+#: templates/registration/password_change_form.html:93
+msgid "If someone else needs PIN reset, click here."
+msgstr ""
+
+#: templates/registration/password_change_form.html:97
+msgid "Click here to login."
+msgstr ""
+
+#: templates/registration/password_reset_complete.html:8
+msgid "The password has been changed!"
+msgstr ""
+
+#: templates/registration/password_reset_complete.html:9
+msgid "log in again?"
+msgstr ""
+
+#: templates/registration/password_reset_confirm.html:9
+msgid "Please enter (and confirm) your new PIN."
+msgstr ""
+
+#: templates/registration/password_reset_confirm.html:32
+msgid "PIN reset failed"
+msgstr ""
+
+#: templates/registration/password_reset_done.html:9
+msgid "We've emailed instructions for setting a PIN for the user in question."
+msgstr ""
+
+#: templates/registration/password_reset_done.html:10
+msgid "If they haven't arrived in a few minutes,"
+msgstr ""
+
+#: templates/registration/password_reset_done.html:11
+msgid "please ask the person to check spam folder."
+msgstr ""
+
+#: templates/registration/password_reset_done.html:15
+msgid "Back to Find Child."
+msgstr ""
+
+#: templates/registration/password_reset_form.html:14
+msgid "Enter the email address of the user who needs PIN reset."
+msgstr ""
+
+#: templates/registration/password_reset_form.html:15
+msgid "This could be yours. Or, your friend who forgot PIN or username."
+msgstr ""
+
+#: templates/registration/password_reset_form.html:17
+msgid "Email Reset Link"
+msgstr ""

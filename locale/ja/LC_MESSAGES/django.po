@@ -1,0 +1,305 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-31 13:59+1200\n"
+"PO-Revision-Date: 2022-05-31 13:59+1200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: interaction/forms.py:11
+msgid "Drop-off"
+msgstr "お見送り"
+
+#: interaction/forms.py:12
+msgid "Pick-up"
+msgstr "お迎え"
+
+#: interaction/forms.py:14 interaction/models.py:67
+#, fuzzy
+#| msgid "checkout_choice"
+msgid "checkout choice"
+msgstr "目的"
+
+#: interaction/models.py:10
+#, fuzzy
+#| msgid "teacher_name"
+msgid "teacher name"
+msgstr "教師名"
+
+#: interaction/models.py:19
+#, fuzzy
+#| msgid "class_room"
+msgid "class room"
+msgstr "クラス"
+
+#: interaction/models.py:20
+#, fuzzy
+#| msgid "day_of_week"
+msgid "day of week"
+msgstr "曜日"
+
+#: interaction/models.py:21
+#, fuzzy
+#| msgid "start_time"
+msgid "start time"
+msgstr "開始時刻"
+
+#: interaction/models.py:22
+#, fuzzy
+#| msgid "end_time"
+msgid "end time"
+msgstr "終了時刻"
+
+#: interaction/models.py:68
+#, fuzzy
+#| msgid "checkout_time"
+msgid "checkout time"
+msgstr "時間"
+
+#: interaction/password_validation.py:12 interaction/password_validation.py:18
+msgid "Your PIN must contain exactly 6 digit"
+msgstr "PIN は6 桁です"
+
+#: interaction/templates/base.html:26
+msgid "Welcome to JKET"
+msgstr "JKETへようこそ"
+
+#: interaction/templates/interaction/checkout.html:6
+msgid "Select your choice & enter your PIN"
+msgstr "目的とPINを入力し送信してください。"
+
+#: interaction/templates/interaction/checkout.html:23
+msgid "Checkout Choice:"
+msgstr "目的："
+
+#: interaction/templates/interaction/checkout.html:41
+msgid "Submit"
+msgstr "送信"
+
+#: interaction/templates/interaction/checkout.html:42
+msgid "Forgot your PIN?"
+msgstr "PINを忘れた方"
+
+#: interaction/templates/interaction/checkout.html:50
+#: interaction/templates/interaction/student_list.html:27
+msgid "Previous Page"
+msgstr "前のページ"
+
+#: interaction/templates/interaction/classroom_list.html:5
+msgid "Select your classroom"
+msgstr "クラスを選んでください。"
+
+#: interaction/templates/interaction/classroom_list.html:21
+msgid "There is no class today."
+msgstr "本日のクラスはありません。"
+
+#: interaction/templates/interaction/index.html:23
+msgid "Find Your Child"
+msgstr "生徒を検索"
+
+#: interaction/templates/interaction/student_list.html:21
+msgid "There is no student in this class."
+msgstr "このクラスに生徒はいません。"
+
+#: interaction/templates/interaction/success_checkout.html:5
+msgid "Successfully Submitted."
+msgstr "送信が完了しました。"
+
+#: interaction/templates/interaction/success_checkout.html:11
+msgid "Back to Front Page"
+msgstr "フロントページ"
+
+#: rego/settings.py:138
+msgid "English"
+msgstr "英語"
+
+#: rego/settings.py:139
+msgid "Japanese"
+msgstr "日本語"
+
+#: templates/admin/base_site.html:3
+msgid "Django site admin"
+msgstr ""
+
+#: templates/base_registration.html:27
+msgid "JKET PIN Reset Portal"
+msgstr "JKET PIN変更画面　"
+
+#: templates/registration/logged_out.html:14
+msgid "Logged out!"
+msgstr "ログアウト完了！"
+
+#: templates/registration/logged_out.html:18
+msgid "Click here for JKET PIN Reset Portal"
+msgstr "JKET PIN変更画面へ"
+
+#: templates/registration/login.html:26
+msgid "Your username and password didn't match. Please try again."
+msgstr "ユーザー名またはPINを再度確認してください。"
+
+#: templates/registration/login.html:31
+msgid "Your account doesn't have access to this page."
+msgstr "このページはアクセスできません。"
+
+#: templates/registration/login.html:32
+msgid "To proceed, please login with an account that has access."
+msgstr "アクセス可能なアカウントにログインしてください。"
+
+#: templates/registration/login.html:34
+msgid "Please login to see this page."
+msgstr "ログインしてください。"
+
+#: templates/registration/login.html:43
+msgid "Username"
+msgstr "ユーザー名"
+
+#: templates/registration/login.html:52
+msgid "login"
+msgstr "ログイン"
+
+#: templates/registration/login.html:58
+msgid "Lost PIN? Forgot username?"
+msgstr "PINの紛失もしくはユーザー名が分からない場合"
+
+#: templates/registration/password_change_done.html:8
+#: templates/registration/password_change_form.html:8
+msgid "Change password"
+msgstr "PINの変更"
+
+#: templates/registration/password_change_done.html:9
+#: templates/registration/password_change_form.html:9
+msgid "Log out"
+msgstr "ログアウト"
+
+#: templates/registration/password_change_done.html:15
+#: templates/registration/password_change_form.html:15
+msgid "Home"
+msgstr "ホーム"
+
+#: templates/registration/password_change_done.html:16
+#: templates/registration/password_change_form.html:16
+msgid "Password change"
+msgstr "PINの変更"
+
+#: templates/registration/password_change_done.html:24
+msgid "Your PIN has been changed."
+msgstr "PINが変更されました。"
+
+#: templates/registration/password_change_done.html:27
+msgid "Please logout."
+msgstr "ログアウトしてください。"
+
+#: templates/registration/password_change_form.html:49
+msgid "Please correct the error below."
+msgstr "下記のエラーを修正してください。"
+
+#: templates/registration/password_change_form.html:51
+#, fuzzy
+#| msgid "Please correct the error below."
+msgid "Please correct the errors below."
+msgstr "下記のエラーを修正してください。"
+
+#: templates/registration/password_change_form.html:84
+msgid "Change my PIN"
+msgstr "PINの変更"
+
+#: templates/registration/password_change_form.html:92
+msgid "Changed your mind? Logout."
+msgstr "ログアウト"
+
+#: templates/registration/password_change_form.html:93
+msgid "If someone else needs PIN reset, click here."
+msgstr "ユーザー名が分からない場合のPIN変更"
+
+#: templates/registration/password_change_form.html:97
+msgid "Click here to login."
+msgstr "ログイン"
+
+#: templates/registration/password_reset_complete.html:8
+msgid "The password has been changed!"
+msgstr "PINの変更が完了しました。"
+
+#: templates/registration/password_reset_complete.html:9
+msgid "log in again?"
+msgstr "再度ログイン"
+
+#: templates/registration/password_reset_confirm.html:9
+msgid "Please enter (and confirm) your new PIN."
+msgstr "新しいPINを入力及び確認ください。"
+
+#: templates/registration/password_reset_confirm.html:32
+msgid "PIN reset failed"
+msgstr "PIN変更できませんでした。"
+
+#: templates/registration/password_reset_done.html:9
+msgid "We've emailed instructions for setting a PIN for the user in question."
+msgstr "入力頂いたeメールにPIN変更の詳細を送信しました。"
+
+#: templates/registration/password_reset_done.html:10
+msgid "If they haven't arrived in a few minutes,"
+msgstr "数分後になってもメールボックスへ到着しない場合、"
+
+#: templates/registration/password_reset_done.html:11
+msgid "please ask the person to check spam folder."
+msgstr "ジャンクメールボックスを確認するようお伝えください。"
+
+#: templates/registration/password_reset_done.html:15
+msgid "Back to Find Child."
+msgstr "生徒の検索へ戻る"
+
+#: templates/registration/password_reset_form.html:14
+msgid "Enter the email address of the user who needs PIN reset."
+msgstr "PIN変更の必要な方のeメールを入力してください。"
+
+#: templates/registration/password_reset_form.html:15
+msgid "This could be yours. Or, your friend who forgot PIN or username."
+msgstr ""
+"現在操作なされてる方、もしくは、ご友人でPINまたはユーザー名をお忘れになった"
+"方のeメールにもご利用出来ます。"
+
+#: templates/registration/password_reset_form.html:17
+msgid "Email Reset Link"
+msgstr "PIN変更リンクを送信"
+
+#, fuzzy
+#~| msgid "Welcome to JKET"
+#~ msgid "Welcome,"
+#~ msgstr "JKETへようこそ"
+
+#, fuzzy
+#~| msgid "log in again?"
+#~ msgid "Log in again"
+#~ msgstr "再度ログイン"
+
+#~ msgid "Click here to login again."
+#~ msgstr "再度ログイン"
+
+#~ msgid "Lost PIN?"
+#~ msgstr "PINの紛失もしくはユーザー名が分からない場合"
+
+#~ msgid "Back to PIN Reset Portal."
+#~ msgstr "PIN変更画面へ戻る"
+
+#~ msgid "PIN Reset Complete"
+#~ msgstr "PINの変更が完了しました。"
+
+#~ msgid "PIN Reset Confirmation"
+#~ msgstr "PIN変更"
+
+#~ msgid "checkout_choice"
+#~ msgstr "目的"
+
+#~ msgid "Your password was changed."
+#~ msgstr "PINが変更されました。"

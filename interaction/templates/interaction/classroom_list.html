@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block header %}
+<h1>{% trans 'Select your classroom' %}</h1>
+{% endblock %}
+
+{% block content %}
+
+<div class="classroom">
+    {% if class_room_list %}
+    {% for class in class_room_list %}
+    {% if class.today_classes %}
+    <form action="{% url 'student_list' class.id %}">
+        <button  type="submit" class="btn btn-success btn-lg classroom-buttons">{{ class }}</button>
+    </form>
+    {% endif %}
+    
+{% endfor %}
+{% else %}
+<h3>{% trans 'There is no class today.' %}</h3>
+{% endif %}
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base_registration.html" %}
+{% load i18n %}
+
+{% block header %}
+    <header class="header">
+      <h1>Japan Kauri Education Trust</h1>
+    </header>
+{% endblock %}
+
+
+{% block content %}
+
+<div class="log-back-in">
+  <h4>{% trans 'Logged out!' %}</h4>
+  <h4>Have a great day!</h4>
+  <br>
+  <br>
+  <a class="link" href="{% url 'login'%}">{% trans 'Click here for JKET PIN Reset Portal' %}</a>
+
+</div>
+{% endblock %}
+
+{% block footer %}
+<div class="content-wrap"></div>
+<div>
+  <footer class="footer">© 2022 Japan Kauri Education Trust</footer>
+</div>
+{% endblock %}
