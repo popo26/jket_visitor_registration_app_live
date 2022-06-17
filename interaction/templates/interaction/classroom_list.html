@@ -7,6 +7,21 @@
 
 {% block content %}
 
+{% get_current_language as CURRENT_LANGUAGE %}
+{% get_available_languages as AVAILABLE_LANGUAGES %}
+{% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
+<div class="languages lang-section">
+  <ul class="languages">
+    {% for language in languages %}
+      
+        <a class='link' href="/{{ language.code }}/interaction/classroom_list"
+          {% if language.code == CURRENT_LANGUAGE %} class="active"{% endif %}>
+          {{ language.name_local }}
+        </a><br>
+    {% endfor %}
+  </ul>
+</div>
+
 <div class="classroom">
     {% if class_room_list %}
     {% for class in class_room_list %}
@@ -21,6 +36,10 @@
 <h3>{% trans 'There is no class today.' %}</h3>
 {% endif %}
 </div>
+
+<div class="previous-page">
+    <a class="link" href="{% url 'index' %}">{% trans 'Previous Page' %}</a>
+    </div>
 
 
 {% endblock %}

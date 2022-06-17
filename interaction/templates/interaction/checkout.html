@@ -8,6 +8,22 @@
 
 {% block content %}
 
+{% get_current_language as CURRENT_LANGUAGE %}
+{% get_available_languages as AVAILABLE_LANGUAGES %}
+{% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
+<div class="languages lang-section">
+  <ul class="languages">
+    {% for language in languages %}
+      
+        <a class='link' href="/{{ language.code }}/interaction/checkout/{{student.id}}"
+          {% if language.code == CURRENT_LANGUAGE %} class="active"{% endif %}>
+          {{ language.name_local }}
+        </a><br>
+    {% endfor %}
+  </ul>
+</div>
+
+
 <div class="class-time-student">
 
     <h4>{{ current_time }}</h4>
@@ -39,7 +55,7 @@
             
         </div>
         <button type="submit" class="btn btn-success btn-lg submit-button">{% trans 'Submit' %}</button>
-        <a class='link forgot-pin' href="{% url 'password_reset' %}">{% trans 'Forgot your PIN?' %}</a>
+        <!-- <a class='link forgot-pin' href="{% url 'password_reset' %}">{% trans 'Forgot your PIN?' %}</a> -->
 </div>
 </form>
 

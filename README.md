@@ -13,12 +13,17 @@
 1. Once clone or download this code, [create a virtualenv](https://docs.python.org/3/library/venv.html).
 2. Acticate the virtualenv.
 3. From terminal, install all the requirements with `pip install -r requirements.txt`.
-4. From terminal, run `python manage.py shell`. Then run below 3 lines of commands to generate a secret key.
+4. I use [python-dotenv](https://pypi.org/project/python-dotenv/) to access environment variables.
+5. Use `.env_example` file to populate settings required for python-dotenv above(see following instructions for environment variables to add).
+6. If you don't have PostgreSQL installed on your computer, please refer to this [page](https://www.postgresql.org/docs/current/installation.html). Then add required information to `.env_example` file.
+7. From terminal, run `python manage.py shell`. Then run below 3 lines of commands to generate a secret key.
  - `from django.core.management.utils import get_random_secret_key`
  - `print(get_random_secret_key())`
  - `exit()`
-5. Copy the generated secret key into *settings.py* in *rego* folder, where it says `SECRET_KEY = `. Replace `os.getenv("SECRET_KEY")` with the generated secret key(make sure to put `""`around it).
-6. From terminal, run `python manage.py runserver` and go to `127.0.0.1:8000/interaction` to view the landing page.
+   Copy the generated secret key into `.env_example` file (Make sure not to add '' or "". Also no space after =.).
+8. For local development environment, in order to test email functionality, uncomment `EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'` in `rego/settings.py`. Then you can see the content of the email in your console.
+9. From terminal, run `python manage.py runserver` and go to `127.0.0.1:8000/interaction` to view the landing page.
+10. Sample data : Under construction🚧
 
 ---
 

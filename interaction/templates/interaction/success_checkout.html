@@ -1,13 +1,41 @@
 {% extends 'base.html' %}
 {% load i18n %}
 
+
 {% block header %}
 <h1>{% trans 'Successfully Submitted.' %}</h1>
 <h1>Have a good day!</h1>
 {% endblock %}
 
 {% block content %}
+
+{% get_current_language as CURRENT_LANGUAGE %}
+{% get_available_languages as AVAILABLE_LANGUAGES %}
+{% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
+<div class="languages lang-section">
+  <ul class="languages">
+    {% for language in languages %}
+      
+        <a class='link' href="/{{ language.code }}/interaction/checkout/success"
+          {% if language.code == CURRENT_LANGUAGE %} class="active"{% endif %}>
+          {{ language.name_local }}
+        </a><br>
+    {% endfor %}
+  </ul>
+</div>
+
 <div class="back-to-front-page">
 <a class="link" href="{% url 'index' %}">{% trans 'Back to Front Page' %}</a>
 </div>
+
+<!-- Javascript for redirection -->
+<script>
+    function redirect(){
+       window.location.href = "{% url 'index' %}";
+    }
+    setTimeout(redirect, 6000); //2000 is equivalent to 2 seconds
+</script>
+
+
 {% endblock %}
+

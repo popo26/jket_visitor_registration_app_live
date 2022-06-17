@@ -53,7 +53,7 @@ def checkout(request, student_pk):
 
             if student.check_password(password) != True :
                 print("Incorrec Password")
-                message = "Your PIN must be exactly 6 digits."    
+                message = "Hint: Child's Bday DDMMYY (e.g.310514)"    
 
                 context = {
                     'checkout_form': checkout_form,
@@ -111,5 +111,8 @@ def checkout(request, student_pk):
 
 def success_checkout(request):
     return render(request, 'interaction/success_checkout.html', {'year': YEAR})
+
+
+    
 
 

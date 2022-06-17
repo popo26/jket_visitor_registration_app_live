@@ -20,7 +20,9 @@ class CheckOutForm(forms.ModelForm):
 
 class UserForm(forms.ModelForm):
     password = forms.CharField(
-        widget=forms.PasswordInput(), 
+        widget=forms.PasswordInput(
+            attrs={'placeholder': "DDMMYY(6 digits)"}
+        ), 
         label="PIN", 
         min_length=6, 
         max_length=6,
